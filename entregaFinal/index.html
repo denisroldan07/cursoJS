@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>compraElectronica</title>
+</head>
+<body>
+
+	<!-- Comienza navbar -->
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light mx-auto">
+  <a class="navbar-brand" href=""><img src="https://freesvg.org/img/Personal-Computer.png" alt="..." style="width: 80px; height: 80px;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown position-static">
+        <a class="nav-link dropdown-toggle w-100" href="#" id="carrito" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Carrito <span id="carritoCantidad" class="badge badge-danger">0</span>
+        </a>
+        <div class="container-fluid">
+          <div class="row w-100">
+            <div id="carritoProductos" class="dropdown-menu" style="width: 100%;">
+            <!-- ACA SE GENERA EL CARRITO -->
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+	
+	<!-- Termina navbar -->
+
+	<section class="container-fluid">
+    <section class="row">
+        <article class="col-lg-3 pt-3 pr-5">
+      		
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-primary text-white" id="inputGroup-sizing-default">Buscar</span>
+            </div>
+            <input type="text" id="busquedaProducto" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+          
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">  
+                        <label class="input-group-text bg-primary text-white" for="filtro">Categorias</label>
+                    </div>
+                    <select class="custom-select" id="filtro">
+                      <!--ACA SE GENERAN LAS CATEGORIAS-->
+                    </select>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <h6>Filtros:</h6>
+            <br>
+            <h6>
+                    <a href="" id="filtroPrecio1" class="text-muted ">7000 a 20000</a>
+            </h6>
+            <hr>
+            <h6>
+                    <a href="" id="filtroPrecio2" class="text-muted">20001 a 100000</a>
+            </h6>
+            <hr>
+            
+            <h6>
+                    <a href="" id="filtroPrecio3"class="text-muted">100001 a 330000</a>
+            </h6>
+         
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text bg-primary text-white" id="inputGroup-sizing-default">MIN</span>
+              </div>
+              <input type="number" id="minPrecio" class="form-control inputPrecio" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text bg-primary text-white" id="inputGroup-sizing-default">MAX</span>
+              </div>
+              <input type="number" id="maxPrecio" class="form-control inputPrecio" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+          
+
+        </article>
+        
+        <article id="divProductos" class="col-lg-8 pt-3">
+            <!-- ACA SE GENERAN LOS PRODUCTOS DE LAS CATEGORIAS -->
+        </article>
+
+    </section>
+</section>
+	
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+	  
+  <script src="js/globales.js"></script>
+  <script src="js/producto.js"></script>
+  <script src="js/respuestas.js"></script>
+  <script src="js/funciones.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
